@@ -1,0 +1,62 @@
+*
+{
+    margin:0%;
+    padding:0%;
+}
+.name
+{
+    text-align:center;
+    padding:15px;
+    font-size:70px;
+    color:rgb(38, 0, 255);
+    display:inline-block;
+    border-radius: 25px;
+ 
+}
+.name:hover
+{
+    color:rgb(245, 30, 234);
+    transition: 0.8s;
+}
+
+.banner video{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+
+    
+}
+@media(min-aspect-ratio:16/9)
+{
+    .banner video
+    {
+        width: 100%;
+        height:auto;
+    }
+}
+.header,ul,li
+{
+  color:purple;
+  display:inline-block;
+  font-size:30px;
+  margin-right:100px;
+}
+li:hover
+{
+    
+    color:rgb(13, 241, 13);
+   
+    
+}
+.header,ul
+{
+    border: 5px solid black;
+    border-width:3px;
+    border-radius:5%;
+    padding:20px 100px;
+}
+.contant
+{
+    text-decoration:underline;
+}
