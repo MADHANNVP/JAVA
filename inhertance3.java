@@ -1,38 +1,55 @@
+import java.util.Scanner;
 class Shape
 {
-    String calculateArea()
+    double calculateArea()
     {
-    return "shapeis";
+    return 0;
 }}
 class Circle extends Shape
 {
-    String calculateArea()
+    double calculateArea()
     {
-       return "Shape is circle"; 
+       Scanner s=new Scanner(System.in);
+       System.out.println("Enter the Radius ");
+       double radius=s.nextDouble();
+       double circle=Math.PI*radius*radius;
+       return circle;
     }
 }
 class Rectangle extends Shape
 {
-    String calculateArea()
+    double calculateArea()
     {
-       return "Shape is circle"; 
+        Scanner s=new Scanner(System.in);
+       System.out.println("Enter  the Width ");
+       double width=s.nextDouble();
+       System.out.println("Enter  the length ");
+       double length=s.nextDouble(); 
+       double rectangle=width*length;
+       return rectangle;
     }
 }
 class Triangle extends Shape
 {
-    String calculateArea()
+    double calculateArea()
     {
-       return "Shape is circle"; 
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter  the Base ");
+       double base=s.nextDouble();
+       System.out.println("Enter  the Height ");
+       double heigth=s.nextDouble(); 
+       double triangle=0.5*base*heigth;
+       return triangle;
     }
 }
 public class inhertance3 {
     public static void main(String[] args) {
-      Circle circle=new Circle();  
-      Rectangle rectangle=new Rectangle();  
-      Triangle triangle=new Triangle();
-      System.out.println(circle.calculateArea());
-      System.out.println(rectangle.calculateArea());
-      System.out.println(triangle.calculateArea());  
+        Rectangle rectangle=new Rectangle();  
+        Triangle triangle=new Triangle();
+        Circle circle=new Circle();  
+      System.out.println("Area of Circle: " +circle.calculateArea());
+      System.out.println("Area of Rectangle: " +rectangle.calculateArea());
+      System.out.println("Area of Triangle: " +triangle.calculateArea());  
     }
     
 }
